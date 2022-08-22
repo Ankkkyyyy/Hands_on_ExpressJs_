@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+  </head>
+  <body>
+    <h1>EJS TEMPLATE ENGINE</h1>
+
+    <h1><%= name %></h1>
+
+    <!-- Creating Variable -->
+
+    <% var i = 10; %>
+
+    <!-- for displaying  -->
+
+    <%= i %>
+
+    <br />
+
+    <!-- Comments -->
+
+    <%# ejs ka comment hai yahape %>
+
+    <!-- if  -->
+
+    <% if(name) { %>
+         Hello <%= name %>
+    <% } %>
+
+    <br>
+
+   <!-- if Conditional  -->
+
+   <% if(id == 19) { %>
+
+    This is 10 
+
+    <% } %>
+
+    <!-- if else -->
+    <% if(id == 19) { %>
+
+        This is 10 
+    
+        <% } else { %>
+            this is not 19
+
+     <% } %>
+
+ <br>
+
+     <!-- if else if -->
+     <% if(id == 19) { %>
+
+        This is 10 
+    
+        <% } else if (id==10) { %>
+            this is else if id 10
+
+     <% } else { %>
+this is nothing
+
+        <% } %>
+
+        <br>
+    <!-- Loop -->
+
+    <!-- for loop -->
+
+    <% for(i=0;i<=4;i++) { %>
+ <%= i %>. 
+ <%= marks[i] %>
+ <br>
+   <% } %>
+
+   <!-- for in loop -->
+
+   <% for(const key in marks) { %>
+    <%= key %>
+    <%= marks[key] %>
+    <% } %>
+
+    <!-- key jo hai vo index -->
+
+    <br>
+
+    <!-- for of loop: sidhe element dega -->
+
+    <% for (const mark of marks) { %> 
+        <%= mark  %>
+        <% } %>
+
+    <br>
+     <!-- while loop  -->
+         <% var i = 0;   %>
+        <% while(i<=4) { %>
+        <%= i  %>
+        <%= i++ %>
+        <% } %>
+
+        <br>
+
+        <!-- forEach loop -->
+
+        <% marks.forEach((value)=>{ %>
+            <%= value  %>
+            <% }) %>
+
+            <br>
+            <!-- function call -->
+
+            <% var current = new Date(); %>
+           <%= current %>
+
+
+
+
+
+  </body>
+</html>
