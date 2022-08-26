@@ -1,0 +1,39 @@
+
+/* font */
+.st-font {
+    font-family: 'Satisfy', cursive;
+}
+
+html,body{
+    height: 100%;
+}
+
+.container-fluid {
+    min-height : 100%;
+}
+
+.nav-link{
+    color: white;
+}
+.nav-link:hover{
+   
+    background-color: rgb(102, 102, 181);
+    color: white;
+}
+
+.i-color{
+    color: chartreuse;
+}
+
+.ss-color{
+    color:silver;
+}
+
+
+a.nav-link.active{
+    color: black;
+    background-color: rgb(102, 102, 181);
+    font-weight: bold;
+}
+
+
